@@ -18,9 +18,9 @@
             label = "APT";
 
             bindings = <
-                               &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
+                               &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Z
                 &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                               &kp G          &kp C          &kp D                                        &kp M          &comsem        &dotcol
+                               &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol
                                                              &my_lt NUM ESC    &my_lt NAV SPACE  &my_lt SYM E      &my_lt FUN ENTER
             >;
         };

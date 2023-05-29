@@ -30,7 +30,7 @@
         combo_z {
             timeout-ms = <40>;
             key-positions = <18 19>;
-            bindings = <&kp Z>;
+            bindings = <&kp Y>;
         };
         combo_v {
             timeout-ms = <40>;
