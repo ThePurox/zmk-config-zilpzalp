@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include "keys_de.h"
 
 #define APT 0
 #define NUM 1
@@ -30,7 +31,7 @@
         combo_z {
             timeout-ms = <40>;
             key-positions = <18 19>;
-            bindings = <&kp Y>;
+            bindings = <&kp DE_Z>;
         };
         combo_v {
             timeout-ms = <40>;
@@ -56,42 +57,42 @@
         combo_lbrc {
             timeout-ms = <40>;
             key-positions = <0 9>;
-            bindings = <&kp LBRC>;
+            bindings = <&kp DE_LBRC>;
         };
         combo_lbkt {
             timeout-ms = <40>;
             key-positions = <1 10>;
-            bindings = <&kp LBKT>;
+            bindings = <&kp DE_LBKT>;
         };
         combo_lpar {
             timeout-ms = <40>;
             key-positions = <2 11>;
-            bindings = <&kp LPAR>;
+            bindings = <&kp DE_LPAR>;
         };
         combo_lt {
             timeout-ms = <40>;
             key-positions = <3 12>;
-            bindings = <&kp LT>;
+            bindings = <&kp DE_LT>;
         };
         combo_gt {
             timeout-ms = <40>;
             key-positions = <4 13>;
-            bindings = <&kp GT>;
+            bindings = <&kp DE_GT>;
         };
         combo_rpar {
             timeout-ms = <40>;
             key-positions = <5 14>;
-            bindings = <&kp RPAR>;
+            bindings = <&kp DE_RPAR>;
         };
         combo_rbkt {
             timeout-ms = <40>;
             key-positions = <6 15>;
-            bindings = <&kp RBKT>;
+            bindings = <&kp DE_RBKT>;
         };
         combo_rbrc {
             timeout-ms = <40>;
             key-positions = <7 16>;
-            bindings = <&kp RBRC>;
+            bindings = <&kp DE_RBRC>;
         };
 /* caps */
         combo_caps-word {
