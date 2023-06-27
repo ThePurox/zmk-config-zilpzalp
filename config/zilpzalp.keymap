@@ -21,17 +21,17 @@
                                &kp W          &kp F          &kp P          &kp K          &kp J          &kp L          &kp U          &kp DE_Y
                 &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT B     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
                                &kp G          &kp C          &kp D                                        &kp M          &comsem        &dotcol
-                                                             &my_lt NUM ESC    &my_lt NAV SPACE  &my_lt SYM E      &my_lt FUN ENTER
+                                                             &my_lt NUM ESC    &my_lt NAV SPACE  &my_lt SYM E      &my_lt DE ENTER
             >;
         };
         numbers {
             label = "NUM";
 
             bindings = <
-                               &kp N9         &kp N8         &kp N7         &none          &kp PLUS       &kp N7         &kp N8         &kp N9
-                &kp LCTRL      &hl LALT N3    &hl LGUI N2    &hl LSHFT N1   &hl RALT N0    &kp MINUS      &kp N4         &kp N5         &kp N6         &kp SLASH
-                               &kp N6         &kp N5         &kp N4                                       &kp N1         &kp N2         &kp N3
-                                                             &trans         &trans         &kp E          &kp N0
+                               &kp F1         &kp F2         &kp F3         &kp DE_STAR        &kp DE_PLUS     &kp N1         &kp N2         &kp N3
+                &hl LCTRL F10  &hl LALT F4    &hl LGUI F5    &hl LSHFT F6   &hl RALT DE_FSLH   &kp DE_MINUS    &kp N4         &kp N5         &kp N6         &kp DE_DOT
+                               &kp F7         &kp F8         &kp F9                                            &kp N7         &kp N8         &kp N9
+                                                             &trans         &trans             &kp E           &kp N0
             >;
         };
         navigation {
@@ -48,20 +48,20 @@
             label = "SYM";
 
             bindings = <
-                               &kp GRAVE      &kp DQT        &kp RA(LS(SEMI)) &kp LBRC       &kp RBRC       &kp BACKSLASH  &kp PIPE       &kp LT
-                &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR       &kp LPAR       &kp RPAR       &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
-                               &kp TILDE      &kp SQT        &kp UNDERSCORE                                 &kp MINUS      &kp PLUS       &kp EQUAL
-                                                             &kp LBKT         &kp RBKT       &trans         &trans
+                               &kp GRAVE      &kp DE_DQT     &kp RA(LS(SEMI)) &kp LBRC       &kp DE_QMARK    &kp DE_APOS    &kp DE_DQT     &kp DE_CARET
+                &kp DE_BSLH    &kp DE_AT      &kp DE_HASH    &kp DOLLAR       &kp LPAR       &kp DE_EXCL     &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &kp DE_FSLH
+                               &kp TILDE      &kp DE_SQT     &kp UNDERSCORE                                  &kp DE_EQUAL   &kp DE_HASH    &kp EQUAL
+                                                             &kp LBKT         &kp RBKT       &trans          &trans
             >;
         };
         function {
-            label = "FUN";
+            label = "DE";
 
             bindings = <
-                               &bootloader    &trans         &trans         &trans         &kp F12        &kp F7         &kp F8         &kp F9
-                &trans         &trans         &trans         &trans         &trans         &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
-                               &trans         &trans         &trans                                       &kp F1         &kp F2         &kp F3
-                                                             &trans         &trans         &trans         &trans
+                               &kp DE_AT      &kp DE_EURO    &trans         &trans         &trans       &trans        &kp DE_UE     &trans
+                &bootloader    &kp DE_SZ      &trans         &trans         &trans         &trans       &trans        &kp DE_AE     &trans        &kp DE_OE
+                               &trans         &trans         &trans                                     &trans        &trans        &trans
+                                                             &trans         &trans         &trans       &trans
             >;
         };
 

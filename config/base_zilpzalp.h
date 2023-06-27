@@ -8,7 +8,7 @@
 #define NUM 1
 #define NAV 2
 #define SYM 3
-#define FUN 4
+#define DE 4
 
 // &lt {
 //     quick_tap_ms = <170>;
@@ -27,6 +27,7 @@
             timeout-ms = <40>;
             key-positions = <1 2>;
             bindings = <&kp Q>;
+            layers = <APT>;
         };
         combo_z {
             timeout-ms = <40>;
@@ -37,6 +38,7 @@
             timeout-ms = <40>;
             key-positions = <0 1>;
             bindings = <&kp V>;
+            layers = <APT>;
         };
         combo_slash {
             timeout-ms = <40>;
@@ -120,6 +122,19 @@
             timeout-ms = <40>;
             key-positions = <5 7>;
             bindings = <&kp LC(BSPC)>;
+        };
+/*F keys*/
+        combo_F11 {
+          timeout-ms = <40>;
+          key-positions = <0 1>;
+          layers = <NUM>;
+          bindings = <&kp F11>;
+        };
+        combo_F12 {
+          timeout-ms = <40>;
+          key-positions = <1 2>;
+          layers = <NUM>;
+          bindings = <&kp F12>;
         };
     };
 };
