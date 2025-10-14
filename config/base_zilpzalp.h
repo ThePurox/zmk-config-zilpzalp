@@ -10,6 +10,8 @@
 #define SYM 3
 #define DE 4
 
+#define QUICK_TAP_TIME 200
+
 // &lt {
 //     quick_tap_ms = <170>;
 // };
@@ -150,7 +152,7 @@
             // flavor = "tap-preferred";
             flavor = "balanced";
             tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <QUICK_TAP_TIME>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
@@ -163,7 +165,7 @@
             // flavor = "tap-preferred";
             flavor = "balanced";
             tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <QUICK_TAP_TIME>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
@@ -177,7 +179,7 @@
             // flavor = "tap-preferred";
             flavor = "balanced";
             tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <QUICK_TAP_TIME>;
             // global-quick-tap;
             bindings = <&mo &kp>, <&kp>;
             // non-thumb keys

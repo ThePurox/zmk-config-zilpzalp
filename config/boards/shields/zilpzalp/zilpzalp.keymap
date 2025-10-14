@@ -8,6 +8,8 @@
 #define SYM 3
 #define FUN 4
 
+#define QUICK_TAP_TIME 200
+
 &lt {
     quick_tap_ms = <200>;
 };
@@ -132,7 +134,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <QUICK_TAP_TIME>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
@@ -145,7 +147,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <QUICK_TAP_TIME>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
