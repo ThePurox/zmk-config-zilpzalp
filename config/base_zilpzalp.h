@@ -5,9 +5,10 @@
 #include "keys_de.h"
 
 #define APT 0
-#define NUM 1
-#define NAV 2
+#define NAV 1
+#define NUM 2
 #define SYM 3
+#define MED 4
 #define DE 4
 
 #define QUICK_TAP_TIME 200
@@ -47,15 +48,10 @@
             key-positions = <22 23>;
             bindings = <&kp SLASH>;
         };
-        combo_minus {
-            timeout-ms = <40>;
-            key-positions = <21 22>;
-            bindings = <&kp MINUS>;
-        };
         combo_ent {
             timeout-ms = <40>;
-            key-positions = <23 24>;
-            bindings = <&kp ESC>;
+            key-positions = <21 22>;
+            bindings = <&kp ENTER>;
         };
 /* caps */
         combo_caps-word {
@@ -71,22 +67,22 @@
         /* Umlaute */
         combo_ue {
           timeout-ms = <20>;
-          key-positions = <8 28>;
+          key-positions = <7 26>;
           bindings = <&kp DE_UE>;
         };
         combo_oe {
           timeout-ms = <20>;
-          key-positions = <19 28>;
+          key-positions = <17 26>;
           bindings = <&kp DE_OE>;
         };
         combo_ae {
           timeout-ms = <20>;
-          key-positions = <17 28>;
+          key-positions = <15 26>;
           bindings = <&kp DE_AE>;
         };
         combo_sz {
           timeout-ms = <20>;
-          key-positions = <11 28>;
+          key-positions = <9 26>;
           bindings = <&kp DE_SZ>;
         };
         /* deletion */
@@ -114,7 +110,7 @@
         };
         combo_F9 {
           timeout-ms = <40>;
-          key-positions = <20 21>;
+          key-positions = <18 19>;
           layers = <NUM>;
           bindings = <&kp F9>;
         };
