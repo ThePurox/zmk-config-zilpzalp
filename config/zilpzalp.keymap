@@ -14,54 +14,43 @@
     keymap {
         compatible = "zmk,keymap";
 
-        aptmak {
-            label = "APT";
-
+        apt_layer {
+            label = "Base";
             bindings = <
-                               &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp DE_Y
-                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                               &kp C          &kp G          &kp D                                        &kp M          &kp DE_COMMA   &kp DE_DOT
-                                                           &my_lt NUM ESC  &my_lt NAV SPACE  &my_lt SYM E  &my_lt DE ENTER
+                     &kp W        &kp F        &kp P          &kp B         &kp J         &kp L         &kp DE_Y     &kp U
+       &hl LCTRL R   &hl LALT S   &hl LGUI T   &hl LSHFT H    &hl RALT K    &hr RALT X    &hr RSHFT N   &hr RGUI A   &hr LALT I  &hr RCTRL O
+                     &kp C        &kp G        &kp D                                      &kp M         &kp DE_COMMA &kp DE_DOT
+                                  &my_lt MED ESC  &my_lt NAV SPACE  &my_lt SYM E        &my_lt NUM TAB
             >;
         };
-        numbers {
-            label = "NUM";
 
+        nav_layer {
+            label = "Nav";
             bindings = <
-                               &kp F1         &kp F2         &kp F3         &kp DE_STAR        &kp DE_PLUS     &kp N1         &kp N2         &kp N3
-                &hl LCTRL F10  &hl LALT F4    &hl LGUI F5    &hl LSHFT F6   &hl RALT DE_FSLH   &kp DE_MINUS    &kp N4         &kp N5         &kp N6         &kp DE_DOT
-                               &kp F7         &kp F8         &kp F9                                            &kp N7         &kp N8         &kp N9
-                                                             &trans         &trans             &kp E           &kp N0
+                  &trans     &kp UARW    &trans          &trans       &kp HOME         &kp PG_DN      &kp PG_UP   &kp END
+       &trans     &kp LARW   &kp DARW    &kp RARW        &trans       &kp LARW         &kp DARW       &kp UARW    &kp RARW   &trans
+                  &trans     &trans      &trans                                        &trans         &trans      &trans
+                                         &trans          &trans       &trans           &trans
             >;
         };
-        navigation {
-            label = "NAV";
 
+        num_layer {
+            label = "Num";
             bindings = <
-                               &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT
-                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
-                               &kp HOME       &kp PG_DN      &kp END                                       &kp HOME       &kp PG_UP      &kp END
-                                                             &trans          &trans         &trans         &trans
+                   kp F2     &kp F3      &kp F4          &kp F1        &kp DE_PLUS   &kp N1         &kp N2      &kp N3
+       &kp F5     &kp F6     &kp F7      &kp F8          &kp F9        &kp N0        &kp N4         &kp N5      &kp N6     &kp DOT
+                   kp F10    &kp F11     &kp F12                                     &kp N7         &kp N8      &kp N9
+                                         &trans          &trans        &trans        &trans
             >;
         };
-        symbols {
-            label = "SYM";
 
+        symbol_layer {
+            label = "Symbol";
             bindings = <
-                               &kp GRAVE      &kp DE_DQT     &kp RA(LS(SEMI)) &kp LBRC       &kp DE_QMARK    &kp DE_APOS    &kp DE_DQT     &kp DE_CARET
-                &kp DE_BSLH    &kp DE_AT      &kp DE_HASH    &kp DOLLAR       &kp LPAR       &kp DE_EXCL     &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &kp DE_FSLH
-                               &kp TILDE      &kp DE_SQT     &kp UNDERSCORE                                  &kp DE_EQUAL   &kp DE_HASH    &kp EQUAL
-                                                             &kp LBKT         &kp RBKT       &trans          &trans
-            >;
-        };
-        function {
-            label = "DE";
-
-            bindings = <
-                               &kp DE_AT      &kp DE_EURO    &trans         &trans         &trans       &trans        &kp DE_UE     &trans
-                &bootloader    &kp DE_SZ      &trans         &trans         &trans         &trans       &trans        &kp DE_AE     &trans        &kp DE_OE
-                               &trans         &trans         &trans                                     &trans        &trans        &trans
-                                                             &trans         &trans         &trans       &trans
+                               &kp DE_GRAVE   &kp DE_LBKT    &kp DE_RBKT      &kp DE_QMARK   &kp DE_EXCL     &kp DE_APOS    &kp DE_DQT     &kp DE_CARET
+                &kp DE_BSLH    &kp DE_HASH    &kp DE_LPAR    &kp DE_RPAR      &kp DE_TILDE   &kp DE_EQUAL    &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &kp DE_FSLH
+                               &kp DE_TILDE   &kp DE_LBRC    &kp DE_RBRC                                     &kp DE_LT      &kp DE_GT      &kp DE_PIPE
+                                                             &trans           &trans         &trans          &trans
             >;
         };
 

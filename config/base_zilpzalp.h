@@ -52,51 +52,10 @@
             key-positions = <21 22>;
             bindings = <&kp MINUS>;
         };
-        combo_esc {
+        combo_ent {
             timeout-ms = <40>;
-            key-positions = <19 20>;
+            key-positions = <23 24>;
             bindings = <&kp ESC>;
-        };
-/* parentheticals */
-        combo_lbrc {
-            timeout-ms = <40>;
-            key-positions = <0 9>;
-            bindings = <&kp DE_LBRC>;
-        };
-        combo_lbkt {
-            timeout-ms = <40>;
-            key-positions = <1 10>;
-            bindings = <&kp DE_LBKT>;
-        };
-        combo_lpar {
-            timeout-ms = <40>;
-            key-positions = <2 11>;
-            bindings = <&kp DE_LPAR>;
-        };
-        combo_lt {
-            timeout-ms = <40>;
-            key-positions = <3 12>;
-            bindings = <&kp DE_LT>;
-        };
-        combo_gt {
-            timeout-ms = <40>;
-            key-positions = <4 13>;
-            bindings = <&kp DE_GT>;
-        };
-        combo_rpar {
-            timeout-ms = <40>;
-            key-positions = <5 14>;
-            bindings = <&kp DE_RPAR>;
-        };
-        combo_rbkt {
-            timeout-ms = <40>;
-            key-positions = <6 15>;
-            bindings = <&kp DE_RBKT>;
-        };
-        combo_rbrc {
-            timeout-ms = <40>;
-            key-positions = <7 16>;
-            bindings = <&kp DE_RBRC>;
         };
 /* caps */
         combo_caps-word {
@@ -109,10 +68,31 @@
             key-positions = <0 7>;
             bindings = <&kp CAPSLOCK>;
         };
-/* deletion */
+        /* Umlaute */
+        combo_ue {
+          timeout-ms = <20>;
+          key-positions = <8 28>;
+          bindings = <&kp DE_UE>;
+        };
+        combo_oe {
+          timeout-ms = <20>;
+          key-positions = <19 28>;
+          bindings = <&kp DE_OE>;
+        };
+        combo_ae {
+          timeout-ms = <20>;
+          key-positions = <17 28>;
+          bindings = <&kp DE_AE>;
+        };
+        combo_sz {
+          timeout-ms = <20>;
+          key-positions = <11 28>;
+          bindings = <&kp DE_SZ>;
+        };
+        /* deletion */
         combo_bspc {
-            timeout-ms = <40>;
-            key-positions = <5 6>;
+          timeout-ms = <40>;
+          key-positions = <5 6>;
             bindings = <&kp BSPC>;
         };
         combo_del {
@@ -126,17 +106,17 @@
             bindings = <&kp LC(BSPC)>;
         };
 /*F keys*/
-        combo_F11 {
+        combo_F1 {
           timeout-ms = <40>;
           key-positions = <0 1>;
           layers = <NUM>;
-          bindings = <&kp F11>;
+          bindings = <&kp F1>;
         };
-        combo_F12 {
+        combo_F9 {
           timeout-ms = <40>;
-          key-positions = <1 2>;
+          key-positions = <20 21>;
           layers = <NUM>;
-          bindings = <&kp F12>;
+          bindings = <&kp F9>;
         };
     };
 };
