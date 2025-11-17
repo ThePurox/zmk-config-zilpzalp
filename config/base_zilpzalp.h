@@ -43,6 +43,30 @@
             bindings = <&kp V>;
             layers = <APT>;
         };
+        combo_b {
+            timeout-ms = <40>;
+            key-positions = <2 10>;
+            bindings = <&kp B>;
+            layers = <APT>;
+        };
+        combo_j {
+          timeout-ms = <40>;
+          key-positions = <5 15>;
+          bindings = <&kp J>;
+          layers = <APT>;
+        };
+        combo_k {
+          timeout-ms = <40>;
+          key-positions = <10 11>;
+          bindings = <&kp K>;
+          layers = <APT>;
+        };
+        combo_x {
+          timeout-ms = <40>;
+          key-positions = <14 15>;
+          bindings = <&kp X>;
+          layers = <APT>;
+        };
         combo_slash {
             timeout-ms = <40>;
             key-positions = <22 23>;
